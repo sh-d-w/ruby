@@ -7,12 +7,18 @@
 # 5. concatenate in string output
 
 def expanded_form(p_number)
-    str = "test"
-
+    str = ""
+    number = p_number
+    t_number = 1
+    while number > 0
+        puts number % 10
+        number /= 10
+    end
+#    puts number
 return str
 end
 
-puts "Hello World!" + expanded_form(12);
+puts "Hello World!" + expanded_form(80504);
 
 # expanded_form(12); // Should return '10 + 2'
 # expanded_form(42); // Should return '40 + 2'
