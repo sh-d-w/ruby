@@ -11,8 +11,14 @@ def expanded_form(p_number)
     number = p_number
     t_number = 1
     while number > 0
-        puts number % 10
-        number /= 10
+        if number % 10 != 0
+            puts (number % 10) * t_number
+
+            number -= (number % 10)
+        else
+            t_number *= 10
+            number /= 10
+        end
     end
 #    puts number
 return str
